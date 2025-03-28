@@ -1,0 +1,25 @@
+{
+  "name": "vscode-funk",
+  "displayName": "Funk Syntax Highlighting",
+  "description": "Adds syntax highlighting, comments, and basic language support for Funk in VS Code.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "funk",
+      "aliases": ["Funk", "funk"],
+      "extensions": [".fk",".funk"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "funk",
+      "scopeName": "source.funk",
+      "path": "./syntaxes/funk.tmLanguage.json"
+    }]
+  }
+}
